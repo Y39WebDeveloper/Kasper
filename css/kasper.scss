@@ -356,3 +356,73 @@ header{
     }
 }
 /* End Deisgn */
+/* Start Portfolio */
+.portfolio{
+    @extend %section-padding;
+    .shuffle{
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 10px;
+            &.active {
+                background-color: $mainColor;
+                color: #fff;
+            }
+        }
+    }
+    .imgs{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        .box{
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                .caption{
+                    bottom: 0;
+                }
+                img{
+                    transform: rotate(3deg) scale(1.1);
+                }
+            }
+
+            @media (min-width: 768px) {
+                flex-basis: 50%;
+            }
+            @media (min-width: 1199px) {
+                flex-basis: 25%;
+            }
+            img{
+                max-width: 100%;
+                transition: .3s;
+            }
+            .caption{
+                position: absolute;
+                left: 0;
+                padding: 20px;
+                background-color: #fff;
+                width: 100%;
+                transition: .3s;
+                bottom: -100%;
+                h4{
+                    font-weight: normal;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .more{
+        background-color: $mainColor;
+        color: #fff;
+        padding: 15px 20px;
+        display: block;
+        width: fit-content;
+        margin: 30px auto;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+/* End Portfolio */
