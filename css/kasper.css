@@ -1,6 +1,16 @@
-.services {
+@charset "UTF-8";
+.design, .services {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.design::before, .landing .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Start Global Rules */
@@ -215,14 +225,6 @@ header .container nav .form i {
   background-size: cover;
   position: relative;
 }
-.landing .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 .landing .text {
   position: absolute;
   left: 0;
@@ -347,3 +349,60 @@ header .container nav .form i {
 }
 
 /* End Services */
+/* Start Deisgn */
+.design {
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+  background-image: url("../images/design-features.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.design::before {
+  content: "";
+}
+.design .img, .design .text {
+  position: relative;
+  z-index: 2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.design .img {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .design .img {
+    display: none;
+  }
+}
+.design .img img {
+  position: relative;
+  bottom: -150px;
+}
+.design .text {
+  color: #fff;
+  padding: 50px;
+  background-color: rgba(15, 116, 146, 0.7);
+}
+.design .text h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.design .text ul li {
+  padding: 15px 0;
+}
+.design .text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+/* End Deisgn */
