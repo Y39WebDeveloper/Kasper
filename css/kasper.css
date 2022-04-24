@@ -4,7 +4,7 @@
   padding-bottom: 100px;
 }
 
-.design::before, .landing .overlay {
+.video::before, .design::before, .landing .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -489,3 +489,38 @@ header .container nav .form i {
 }
 
 /* End Portfolio */
+/* Start Video */
+.video {
+  position: relative;
+}
+.video video {
+  width: 100%;
+}
+.video .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 50px;
+  background-color: rgba(15, 116, 146, 0.7);
+  color: #fff;
+  text-align: center;
+}
+.video .text h2 {
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.video .text p {
+  margin-bottom: 20px;
+}
+.video .text button {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+/* End Video */
