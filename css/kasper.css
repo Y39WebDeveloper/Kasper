@@ -524,3 +524,24 @@ header .container nav .form i {
 }
 
 /* End Video */
+/* Start About */
+.about {
+  overflow: hidden;
+  padding-top: 100px;
+  text-align: center;
+}
+.about img {
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .about img {
+    position: relative;
+    bottom: -60px;
+    margin-top: -60px;
+  }
+}
+
+/* End About */
