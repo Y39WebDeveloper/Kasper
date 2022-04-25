@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.portfolio, .design, .services {
+.stats, .portfolio, .design, .services {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.video::before, .design::before, .landing .overlay {
+.stats::before, .video::before, .design::before, .landing .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -545,3 +545,67 @@ header .container nav .form i {
 }
 
 /* End About */
+/* Start Stats*/
+.stats {
+  text-align: center;
+  background-image: url(../images/stats.png);
+  background-size: cover;
+  position: relative;
+}
+.stats .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.stats .container .box {
+  color: #fff;
+  padding: 50px;
+  background-color: rgba(15, 116, 146, 0.7);
+}
+@media (max-width: 767px) {
+  .stats .container .box {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .stats .container .box {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .stats .container .box {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+.stats .container .box i {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1f2021;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+}
+.stats .container .box .number {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.stats .container .box p {
+  font-size: 14px;
+}
+
+/* End Stats*/
