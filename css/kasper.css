@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.skills, .stats, .portfolio, .design, .services {
+.quote, .skills, .stats, .portfolio, .design, .services {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.stats::before, .video::before, .design::before, .landing .overlay {
+.quote::before, .stats::before, .video::before, .design::before, .landing .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -737,3 +737,24 @@ header .container nav .form i {
 }
 
 /* End Skills */
+/* Start Quote */
+.quote {
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.quote::before {
+  content: "";
+}
+.quote .container {
+  position: relative;
+}
+.quote q {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* End Quote */

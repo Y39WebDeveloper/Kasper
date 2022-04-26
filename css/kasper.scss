@@ -642,3 +642,27 @@ header{
     }
 }
 /* End Skills */
+/* Start Quote */
+.quote{
+    @extend %section-padding;
+    background: {
+        image: url(../images/quote.jpg);
+        size: cover;
+    }
+    position: relative;
+    text-align: center;
+    color: #fff;
+    &::before{
+        content: "";
+        @extend %layer;
+    }
+    .container{
+        position: relative;
+    }
+    q{
+        font-size: 30px;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+/* End Quote */
