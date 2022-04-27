@@ -666,3 +666,45 @@ header{
     }
 }
 /* End Quote */
+/* Start Pricing */
+.pricing{
+    @extend %section-padding;
+    .plans{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        .plan{
+            background-color: #fcfcfc;
+            text-align: center;
+            .head{
+                padding: 40px 20px;
+                border-top: 1px solid $mainColor;
+                border-bottom: 1px solid $mainColor;
+                h3{
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+                span{
+                    font-size: 60px;
+                    font-weight: bold;
+                    &::before{
+                        content: "$";
+                        font-size: 25px;
+                        font-weight: normal;
+                        position: relative;
+                        top: -40px;
+                        margin-right: 15px;
+                    }
+                    &::after{
+                        content: "/Mo";
+                        font-size: 20px;
+                        position: relative;
+                        right: -15px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Pricing */
