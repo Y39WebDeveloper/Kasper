@@ -797,5 +797,52 @@ header .container nav .form i {
   position: relative;
   right: -15px;
 }
+.pricing .plans .plan ul {
+  border-bottom: 1px solid #19c8fa;
+}
+.pricing .plans .plan ul li {
+  position: relative;
+  padding: 20px;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 1px;
+  background-color: #19c8fa;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+.pricing .plans .plan .foot a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #19c8fa;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto;
+  color: #19c8fa;
+}
+.pricing .contact-txt {
+  text-align: center;
+  margin-top: 50px auto 20px;
+  font-size: 20px;
+}
+.pricing .contact-link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: #19c8fa;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
 
 /* End Pricing */
