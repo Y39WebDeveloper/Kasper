@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.pricing, .quote, .skills, .stats, .portfolio, .design, .services {
+.subscribe, .pricing, .quote, .skills, .stats, .portfolio, .design, .services {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.quote::before, .stats::before, .video::before, .design::before, .landing .overlay {
+.subscribe::before, .quote::before, .stats::before, .video::before, .design::before, .landing .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -846,3 +846,94 @@ header .container nav .form i {
 }
 
 /* End Pricing */
+/* Start Subscribe */
+.subscribe {
+  background-image: url("../images/subscribe.jpg");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+.subscribe::before {
+  content: "";
+}
+.subscribe .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (maxx-width: 991px) {
+  .subscribe .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.subscribe .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+.subscribe .container form i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 25px;
+}
+.subscribe .container form input[type=email] {
+  border: 1px solid #fff;
+  border-right: none;
+  background: none;
+  padding: 20px 20px 20px 60px;
+  caret-color: #19c8fa;
+  width: calc(100% -130px);
+}
+.subscribe .container form input[type=email]::-webkit-input-placeholder {
+  color: #fff;
+}
+.subscribe .container form input[type=email]::-moz-placeholder {
+  color: #fff;
+}
+.subscribe .container form input[type=email]:-ms-input-placeholder {
+  color: #fff;
+}
+.subscribe .container form input[type=email]::-ms-input-placeholder {
+  color: #fff;
+}
+.subscribe .container form input[type=email]::placeholder {
+  color: #fff;
+}
+.subscribe .container form input[type=email]:focus {
+  outline: none;
+}
+.subscribe .container form input[type=submit] {
+  width: 130px;
+  background-color: #19c8fa;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-left: none;
+  text-transform: uppercase;
+}
+.subscribe .container form input[type=submit]:focus {
+  outline: none;
+}
+.subscribe .container p {
+  line-height: 2;
+  margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .subscribe .container p {
+    margin: 30px 0 0;
+  }
+}
+
+/* End Subscribe */

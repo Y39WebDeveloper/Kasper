@@ -748,3 +748,71 @@ header{
     }
 }
 /* End Pricing */
+/* Start Subscribe */
+.subscribe{
+    @extend %section-padding;
+    background: {
+        image: url("../images/subscribe.jpg");
+        size: cover;
+    }
+    position: relative;
+    color: #fff;
+    &::before{
+        content: "";
+        @extend %layer;
+    }
+    .container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        @media (maxx-width: 991px) {
+            flex-direction: column;
+        }
+        form{
+            display: flex;
+            position: relative;
+            width: 500px;
+            max-width: 100%;
+            i{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 25px;
+            }
+            input[type='email']{
+                &::placeholder {
+                    color: #fff;
+                }
+                border: 1px solid #fff;
+                border-right: none;
+                background: none;
+                padding: 20px 20px 20px 60px;
+                caret-color: $mainColor;
+                width: calc(100% -130px);
+                &:focus{
+                    outline: none;
+                }
+            }
+            input[type='submit']{
+                width: 130px;
+                background-color: $mainColor;
+                color: #fff;
+                padding: 10px 20px;
+                border: 1px solid #fff;
+                border-left: none;
+                text-transform: uppercase;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        p{
+            line-height: 2;
+            margin-left: 50px;
+            @media (max-width:991px) {
+                margin: 30px 0 0;
+            }
+        }
+    }
+}
+/* End Subscribe */
