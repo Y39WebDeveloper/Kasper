@@ -884,3 +884,46 @@ header{
     }
 }
 /* End Contact */
+/* Start Footer */
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: {
+        image: url("../images/subscribe.jpg");
+        size: cover;
+    }
+    position: relative;
+    color: #fff;
+    text-align: center;
+    &::before{
+        content: "";
+        @extend %layer;
+    }
+    .container{
+        position: relative;
+        img{
+            margin-bottom: 20px;
+        }
+        p:not(.copyright){
+            text-transform: uppercase;
+            padding: 20px;
+            border-bottom: 1px solid #fff;
+            font-size: 22px;
+            width: fit-content;
+            margin: 20px auto;
+        }
+        .socialIcons{
+            i{
+                padding: 10px 15px;
+            }
+        }
+        .copyright{
+            margin-top: 60px;
+            span{
+                font-weight: bold;
+                color: $mainColor;
+            }
+        }
+    }
+}
+/* End Footer */
